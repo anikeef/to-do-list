@@ -23,7 +23,6 @@ export class ProjectComponent implements OnInit {
     this.newTaskForm = this.formBuilder.group({
       name: ""
     });
-    console.log(this.newTaskForm);
   }
 
   ngOnInit() {

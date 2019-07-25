@@ -8,15 +8,13 @@ import { AppComponent } from './app.component';
 import { ProjectsListComponent } from './projects-list/projects-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProjectComponent } from './project/project.component';
-import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectsListComponent,
     TopBarComponent,
-    ProjectComponent,
-    ItemComponent
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
