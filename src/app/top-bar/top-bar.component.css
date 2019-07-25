@@ -1,0 +1,14 @@
+.main-header {
+  width: 100%;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+a {
+  color: white;
+}

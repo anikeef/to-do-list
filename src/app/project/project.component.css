@@ -1,0 +1,8 @@
+.task {
+  text-align: center;
+}
+
+.done {
+  background: linear-gradient(#3EAFEF, #2D9CDB);
+  color: white;
+}

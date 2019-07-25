@@ -1,0 +1,14 @@
+<div class="project">
+  <h2>{{ project.title }}</h2>
+  <div class="tasks">
+    <div class="task" *ngFor="let task of project.tasks"
+    (click)="task.toggle()" [ngClass]="{'done': task.isDone}">
+      {{ task.name }}
+    </div>
+  </div>
+</div>
+
+<form [formGroup]="newTaskForm" (ngSubmit)="createTask(newTaskForm.value.name)">
+  <input type="text" formControlName="name" placeholder="New task" class="text-input">
+  <button type="submit" class="submit">Create</button>
+</form>

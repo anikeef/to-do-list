@@ -1,0 +1,13 @@
+<form [formGroup]="newProjectForm" (ngSubmit)="createProject(newProjectForm.value.title)">
+  <input type="text" formControlName="title" class="text-input" placeholder="Name your new project">
+  <button type="submit" class="submit">Create</button>
+</form>
+
+<a *ngFor="let project of projects; index as projectId"
+[routerLink]="['projects', projectId]">
+  <div class="project-preview">
+    <h3>
+      {{ project.title }}
+    </h3>
+  </div>
+</a>
