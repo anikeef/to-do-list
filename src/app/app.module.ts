@@ -8,13 +8,15 @@ import { AppComponent } from './app.component';
 import { ProjectsListComponent } from './projects-list/projects-list.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ProjectComponent } from './project/project.component';
+import { TaskComponent } from './task/task.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProjectsListComponent,
     TopBarComponent,
-    ProjectComponent
+    ProjectComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
