@@ -1,7 +1,7 @@
 <div class="project">
   <h2>{{ project.title }}</h2>
   <div class="tasks">
-    <app-task *ngFor="let task of project.tasks" [task]="task"></app-task>
+    <app-task *ngFor="let task of project.tasks; index as taskId" [task]="task" [id]="taskId" (delete)="deleteTask(taskId)"></app-task>
   </div>
 </div>
 

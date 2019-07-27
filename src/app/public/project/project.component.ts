@@ -32,4 +32,8 @@ export class ProjectComponent implements OnInit {
     if (name) this.project.createTask(name);
     this.newTaskForm.reset();
   }
+
+  deleteTask(id: number) {
+    this.project.tasks.splice(id, 1);
+  }
 }

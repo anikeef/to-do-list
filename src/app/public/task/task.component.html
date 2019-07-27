@@ -1,4 +1,8 @@
-<div class="task" 
-(click)="task.toggle()" [ngClass]="{'done': task.isDone}">
-  {{ task.name }}
+<div class="task" [ngClass]="{'done': task.isDone}">
+  <div class="clickable-header" (click)="task.toggle()">
+    <h3>
+      {{ task.name }}
+    </h3>
+  </div>
+  <button class="delete-btn" (click)="delete.emit()">Delete</button>
 </div>

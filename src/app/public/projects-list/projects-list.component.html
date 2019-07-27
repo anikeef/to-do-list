@@ -5,13 +5,10 @@
 
 
 <div *ngFor="let project of projects; index as projectId" class="project-preview">
-
-<a [routerLink]="['projects', projectId]" class="clickable-header">
+  <a [routerLink]="['projects', projectId]" class="clickable-header">
     <h3 >
-
         {{ project.title }}
-
     </h3>
-</a>
+  </a>
   <button class="delete-btn" (click)="deleteProject(projectId)">Delete</button>
 </div>
