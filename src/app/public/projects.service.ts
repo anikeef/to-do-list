@@ -12,4 +12,9 @@ export class ProjectsService {
     this.projects.push(new Project(title));
     return this.projects;
   }
+
+  deleteProject(id: number) {
+    this.projects.splice(id, 1);
+    return this.projects;
+  }
 }

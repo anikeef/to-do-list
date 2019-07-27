@@ -3,11 +3,15 @@
   <button type="submit" class="submit">Create</button>
 </form>
 
-<a *ngFor="let project of projects; index as projectId"
-[routerLink]="['projects', projectId]">
-  <div class="project-preview">
-    <h3>
-      {{ project.title }}
+
+<div *ngFor="let project of projects; index as projectId" class="project-preview">
+
+<a [routerLink]="['projects', projectId]" class="clickable-header">
+    <h3 >
+
+        {{ project.title }}
+
     </h3>
-  </div>
 </a>
+  <button class="delete-btn" (click)="deleteProject(projectId)">Delete</button>
+</div>

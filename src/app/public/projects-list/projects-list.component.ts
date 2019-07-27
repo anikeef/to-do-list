@@ -28,4 +28,8 @@ export class ProjectsListComponent implements OnInit {
     if (title) this.projects = this.projectsService.createProject(title);
     this.newProjectForm.reset();
   }
+
+  deleteProject(id: number) {
+    this.projects = this.projectsService.deleteProject(id);
+  }
 }

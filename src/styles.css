@@ -53,10 +53,33 @@ form {
 
 .project-preview,
 .task {
-  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin: 10px 0;
   border: 1px solid #E4E4E4;
   background-color: white;
   border-radius: 10px;
+}
+
+.clickable-header {
+  padding: 20px 30px;
+  width: 100%;
+}
+
+.delete-btn {
+  padding: 20px 30px;
+  border: none;
+  background-color: transparent;
+  color: #b30000;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: #ff0000;
+}
+
+.task {
+  padding: 20px 30px;
   cursor: pointer;
 }
