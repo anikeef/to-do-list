@@ -12,7 +12,7 @@ export class Project {
     this.tasks.push(new Task(name));
   }
 
-  toggleTask(id) {
+  toggleTask(id: number) {
     this.tasks[id].toggle();
   }
 }
